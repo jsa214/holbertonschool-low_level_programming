@@ -3,7 +3,7 @@
 /**
  * main - Printing string using puts
  * Return: 0
- */
+ **/
 
 
 
