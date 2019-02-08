@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 /**
- * main - Function prints alphabet
+ * main - print alphabet in lower case
  *
- * putchar with space command creates a new line after the statement
+ * putchar with space cmd creates a n line
  *
  */
 
 int main(void)
 
 {
-	int c;
+	char c;
 
 	for (c = 'a'; c <= 'z'; c++)
 
@@ -19,6 +19,6 @@ int main(void)
 	}
 
 	putchar('\n');
-return (0);
+	return (0);
 
 }
