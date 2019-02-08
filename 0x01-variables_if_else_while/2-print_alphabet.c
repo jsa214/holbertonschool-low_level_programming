@@ -2,14 +2,14 @@
 
 /**
  * main - Function prints alphabet
- * creates a new line after the statement
+ *
+ * putchar with space command creates a new line after the statement
  *
  */
 
 int main(void)
 
 {
-
 	int c;
 
 	for (c = 'a'; c <= 'z'; c++)
