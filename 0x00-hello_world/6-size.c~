@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+/**
+ * main - Printing size of variables
+ * Return: Should be 0
+ */
+
+int main(void)
+
+{
+	int i;
+
+	printf("size of a long long int %i byte(s)\n", sizeof());
+	printf("size of a char int %i byte(s)\n", sizeof());
+	printf("size of a long int %i byte(s)\n", sizeof());
+	printf("size of a float int %i byte(s)\n", sizeof());
+	printf("size of an int int%i byte(s)\n", sizeof());
+
+return (0);
+
+}
