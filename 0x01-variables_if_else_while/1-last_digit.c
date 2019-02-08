@@ -22,15 +22,19 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	number = n % 10;
 
-	if (n > 5)
-	{	printf("%d Last digit of number", number);
-		printf("and is greater than 5\n");
+	if (number > 5)
+	{
+		printf("Last digit of %d is %d and is greater than 5\n", n,
+number);
 	}
 	else if (number == 0)
-		printf("%d Last digit of number and is 0\n", number);
-	else if (n < 6)
-	{	printf("%d Last digit of number and is", number);
-		printf(" less than 6 and not 0\n");
+	{
+		printf("Last digit of %d is %d and is 0\n", n, number);
 	}
-return (0);
+	else if (number < 6)
+	{
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n,
+number);
+	}
+	return (0);
 }
