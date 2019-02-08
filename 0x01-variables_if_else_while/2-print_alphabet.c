@@ -3,8 +3,7 @@
 /**
  * main - print alphabet in lower case
  *
- * putchar with space cmd creates a n line
- *
+ * Return: The printed alphabet
  */
 
 int main(void)
