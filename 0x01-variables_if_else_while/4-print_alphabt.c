@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print alphabet without q and e
+ * main - Print alphabet without q and e
  *
  * Return: The printed alphabet
  */
@@ -9,15 +9,19 @@
 int main(void)
 
 {
-	char *c !;
+	char c = 'a';
 
-	for (c != 'q' && c != 'e'; c++)
+	for (c = 'a'; c <= 'z'; c++)
 
+	{
+	if (c != 'q' && c != 'e')
 	{
 		putchar(c);
 	}
 
-	putchar('\n');
+	}
+	putchar('\n')
 
 	return (0);
+
 }
