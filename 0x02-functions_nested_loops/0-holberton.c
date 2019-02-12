@@ -6,13 +6,13 @@
  *Return: 0
  */
 
-int main()
+int main(void)
 
 {
 	char string[] = "Holberton\n";
 	int index = 0;
 
-	while(string[index])
+	while (string[index])
 
 	{
 		putchar(string[index]);
