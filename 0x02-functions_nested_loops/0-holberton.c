@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- *main - print string "Holberton"
+ * main - print string "Holberton"
  *
- *Return: 0
+ * Return: 0
  */
 
 int main(void)
@@ -15,7 +15,7 @@ int main(void)
 	while (string[index])
 
 	{
-		putchar(string[index]);
+		_putchar(string[index]);
 		index++;
 
 	}
