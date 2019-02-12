@@ -1,13 +1,10 @@
-#include<stdio.h>
+#include "holberton.h"
 
 /**
- *
- * main = alphabet using lower case
- *
- * Return : void
+ * print_alphabet - print in lower case using _putchar
  */
 
-int main(void)
+void print_alphabet(void);
 
 {
 	char ch;
@@ -15,8 +12,8 @@ int main(void)
 	for (ch = 'a' ; ch <= 'z' ; ch++)
 
 	{
-		putchar(ch);
+		_putchar(ch);
 	}
 
-	return (0);
+	_putchar('\n');
 }
