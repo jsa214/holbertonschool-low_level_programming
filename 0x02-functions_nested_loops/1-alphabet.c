@@ -4,7 +4,7 @@
  * print_alphabet - print in lower case using _putchar
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 
 {
 	char ch;
