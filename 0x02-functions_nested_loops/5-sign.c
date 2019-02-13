@@ -4,6 +4,7 @@
  * print_sign - prints logical sign as value
  *
  * @n: integer
+ *
  * Return: '+' if n > 0 or '0' if = '0' otherwise '-'
  */
 
