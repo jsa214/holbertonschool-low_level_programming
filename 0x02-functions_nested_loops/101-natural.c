@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * printf - prints the value of multiples
+ * main - prints the value of multiples
  * @ i: integer
  * @ j: integer
  *
