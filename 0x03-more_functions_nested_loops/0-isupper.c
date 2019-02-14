@@ -1,5 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
  * _isupper - check for 'c' in uppercase
@@ -9,6 +8,7 @@
  */
 
 int _isupper(int c)
+
 {
 	if (c >= 'A' && c <= 'Z')
 		return (1);
