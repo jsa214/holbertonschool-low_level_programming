@@ -8,6 +8,7 @@
  * Return: 0
  *
  */
+
 int main(void)
 {
 	int i;
@@ -16,6 +17,6 @@ int main(void)
 	for (i = 0; i < 1024; i++)
 		if (i % 3 == 0 || i % 5 == 0)
 			j = j + i;
-	printf("% i", j);
+	printf("%i\n", j);
 	return (0);
 }
