@@ -3,7 +3,7 @@
 /**
  * print_line - draws line in terminal
  *
- * @n: integer counted
+ * @n: number of lines printed
  *
  * Return: Always void
  */
@@ -11,8 +11,9 @@
 void print_line(int n)
 {
 	int c;
+	c = 0;
 
-	for (c = 0; c < n; c++)
+	while (n > 0 && c < n)
 	{
 		_putchar('_');
 		c++;
