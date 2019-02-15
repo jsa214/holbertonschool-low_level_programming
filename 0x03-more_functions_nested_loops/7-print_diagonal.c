@@ -5,8 +5,9 @@
  *
  * @i - variable for columns
  * @j - variable for rows
- * @n - Number of times the'\' will be printed
- * Return : void
+ * @n - Number of times '\' will be printed
+ *
+ * Return: void
  */
 
 void print_diagonal(int n)
