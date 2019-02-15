@@ -5,7 +5,7 @@
  *
  * @n: integer counted
  *
- *Return: 0
+ * Return: Always void
  */
 
 void print_line(int n)
