@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * void - print diagonal line
+ * print_diagonal - Using mul table format to print diagonal line
  *
  * @i - variable for columns
  * @j - variable for rows
+ * @n - Number of times the'\' will be printed
  * Return : void
  */
 
