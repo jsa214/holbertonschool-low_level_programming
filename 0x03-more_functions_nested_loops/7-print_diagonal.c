@@ -3,15 +3,12 @@
 /**
  * print_diagonal - Using mul table format to print diagonal line
  *
- * @i - variable for columns
- * @j - variable for rows
- * @n - Number of times '\' will be printed
+ * @n: Number of times '\' will be printed
  *
  * Return: void
  */
 
 void print_diagonal(int n)
-
 {
 	int i, j;
 
@@ -19,6 +16,7 @@ void print_diagonal(int n)
 	{
 		for (i = 0; i <= n; i++)
 			for (j = 1; j <= i; j++)
+			{
 				if (i != j)
 				{
 					_putchar(' ');
@@ -28,6 +26,7 @@ void print_diagonal(int n)
 					_putchar('\\');
 					_putchar('\n');
 				}
+			}
 	}
 	else
 	{
