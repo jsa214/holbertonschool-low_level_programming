@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints the value of multiples
+ * main - prints the fibonacci
  *
- * @i: integer representing where 1st number is
+ * Fibonacci: integer representing where 1st number is
  * Return: 0
  */
 
@@ -16,12 +16,12 @@ int main(void)
 	Fibonacci[0] = 0;
 	Fibonacci[1] = 1;
 
-	for ( i = 2; i < 50; ++i)
-		Fibonacci[i] = Fibonacci[i-2] + Fibonacci[i-1];
+	for (i = 2; i < 50; ++i)
+		Fibonacci[i] = Fibonacci[i - 2] + Fibonacci[i - 1];
 
 	for (i = 1; i < 50; ++i)
-		printf ("%i\n, ", Fibonacci[i]);
+		printf("%i\n, ", Fibonacci[i]);
 
-	return 0;
+	return (0);
 
 }
