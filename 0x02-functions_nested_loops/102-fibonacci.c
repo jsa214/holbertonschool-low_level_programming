@@ -19,10 +19,13 @@ int main(void)
 	for (i = 2; i < 50; ++i)
 		Fibonacci[i] = Fibonacci[i - 2] + Fibonacci[i - 1];
 
-	for (i = 1; i < 50; ++i)
-		printf("%i\n, ", Fibonacci[i]);
-
-	putchar('\n');
-	return (0);
+	for (i = 2; i < 50; ++i)
+	{
+		printf("%i, ", Fibonacci[i]);
+	}
+	{
+		printf("\n");
+	}
+		return (0);
 
 }
