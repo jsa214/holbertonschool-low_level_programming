@@ -22,6 +22,7 @@ int main(void)
 	for (i = 1; i < 50; ++i)
 		printf("%i\n, ", Fibonacci[i]);
 
+	putchar('\n');
 	return (0);
 
 }
