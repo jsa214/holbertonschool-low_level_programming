@@ -11,17 +11,17 @@ int main(void)
 
 {
 
-	int Fibonacci[15], i;
+	long int Fibonacci[51], i;
 
 	Fibonacci[0] = 0;
 	Fibonacci[1] = 1;
 
-	for (i = 2; i < 50; ++i)
+	for (i = 2; i <= 51; ++i)
 		Fibonacci[i] = Fibonacci[i - 2] + Fibonacci[i - 1];
 
-	for (i = 2; i < 50; ++i)
+	for (i = 2; i < 51; ++i)
 	{
-		printf("%i, ", Fibonacci[i]);
+		printf("%li, ", Fibonacci[i]);
 	}
 	{
 		printf("\n");
