@@ -1,5 +1,5 @@
 #include "holberton.h"
-
+#include <stdio.h>
 /**
  * _strcpy - copies string from src to dest
  *
@@ -8,7 +8,6 @@
  *
  * Return: Pointer to dest
  */
-
 char *_strcpy(char *dest, char *src)
 {
 	char *temp = dest;
