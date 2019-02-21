@@ -19,7 +19,7 @@ int main(void)
 	for (i = 2; i <= 51; ++i)
 		Fibonacci[i] = Fibonacci[i - 2] + Fibonacci[i - 1];
 
-	for (i = 2; i < 50; ++i)
+	for (i = 2; i <= 50; ++i)
 	{
 		printf("%li, ", Fibonacci[i]);
 	}
