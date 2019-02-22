@@ -4,7 +4,7 @@
 /**
  * string_toupper - changes lowercase to uppercase of str
  *
- * @i: int
+ * @s: parameter for characters
  * Return: s
  */
 
