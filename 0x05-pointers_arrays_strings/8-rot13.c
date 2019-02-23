@@ -2,29 +2,28 @@
 #include <stdio.h>
 
 /**
- * rot13 - encodes string
+ * rot13 - encoding used on string
  *
- * @s: string for characters
- * Return: s
+ * @str: string being encoded
+ * Return: str
  */
 
-char *rot13(char *s)
+char *rot13(char *str)
 {
-	int i = 0;
+	char s[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char p[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	int i, j;
 
-	while (s[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		if ((s[i] >= 'a' && s[i] <= 'm') || (s[i] >= 'A' && s[i] <= 'M'))
+		for (j = 0; s[j] != '\0'; j++)
 		{
-			s[i] = (s[i] + 13);
-		}
-		else
-			while ((s[i] >= 'n' && s[i] <= 'z') ||
-			       (s[i] >= 'N' && s[i] <= 'Z'))
+			if (str[i] == s[j])
 			{
-				s[i] = (s[i] - 13);
+				str[i] = p[j];
+				break;
 			}
-		i++;
+		}
 	}
-	return (s);
+	return (str);
 }
