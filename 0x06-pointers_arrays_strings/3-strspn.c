@@ -6,7 +6,7 @@
  *
  * @accept: string being checked for in string s
  * @s: string to check
- * Return: NULL
+ * Return: length
  */
 
 unsigned int _strspn(char *s, char *accept)
@@ -37,5 +37,5 @@ unsigned int _strspn(char *s, char *accept)
 				}
 			}
 	}
-			return (0);
+			return (i);
 }
