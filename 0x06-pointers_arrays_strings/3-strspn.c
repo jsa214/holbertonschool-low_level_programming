@@ -2,11 +2,11 @@
 #include <stdio.h>
 
 /**
- * _strspn - function that locates char i string
+ * _strspn - function that checks the length of string
  *
  * @accept: string being checked for in string s
  * @s: string to check
- * Return: length
+ * Return: length i
  */
 
 unsigned int _strspn(char *s, char *accept)
