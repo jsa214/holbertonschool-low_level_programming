@@ -1,4 +1,3 @@
-#include "holberton.h"
 #include <stdio.h>
 
 /**
@@ -11,7 +10,7 @@
 
 void print_diagsums(int *a, int size)
 {
-	int i = 0;
+	int i;
 	int sum1, sum2;
 
 	sum1 = 0;
