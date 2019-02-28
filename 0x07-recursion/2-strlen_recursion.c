@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _print_rev_recursion - print string in reverse
+ * _strlen_recursion - print string length
  *
- *  @s: string being reversed
+ * @s: string length being checked
  * Return: void
  */
 
