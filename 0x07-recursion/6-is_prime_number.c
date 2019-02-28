@@ -18,7 +18,7 @@ int is_prime_number(int n)
 }
 
 /**
- * _is_prime_numberhelperfunction - used to calculate for prime
+ * is_prime_numberhelperfunction - function used to calculate for prime
  *
  * @n: number to check for prime
  * @i: number to try calculate
