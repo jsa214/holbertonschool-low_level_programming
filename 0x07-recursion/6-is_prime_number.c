@@ -23,5 +23,5 @@ int is_prime_numberhelperfunction(int n, int i)
 		return (1);
 	if (n % i == 0)
 		return (0);
-	return is_prime_numberhelperfunction(n, i - 1);
+	return (is_prime_numberhelperfunction(n, i - 1));
 }
