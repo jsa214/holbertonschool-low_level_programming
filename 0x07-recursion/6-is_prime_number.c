@@ -17,6 +17,14 @@ int is_prime_number(int n)
 	return (is_prime_numberhelperfunction(n, n - 1));
 }
 
+/**
+ * _is_prime_numberhelperfunction - used to calculate for prime
+ *
+ * @n: number to check for prime
+ * @i: number to try calculate
+ * Return: 1 or 0 for prime nos
+ */
+
 int is_prime_numberhelperfunction(int n, int i)
 {
 	if (i == 1)
