@@ -1,6 +1,6 @@
 #include "holberton.h"
 
-int is_palindromehelper(int i, int j);
+int is_palindromehelper(int i, int j)
 
 /**
  * is_palindrome - checks if string is palindrome
@@ -22,7 +22,7 @@ int is_palindrome(char s)
 }
 
 /**
- * is_palindrome - function used to find palindrome
+ * is_palindromehelper - function used to find palindrome
  *
  * @s: string to check for match
  * @i: start of string being checked
@@ -30,9 +30,18 @@ int is_palindrome(char s)
  * Return: 1 for match and 0 for no match
  */
 
-int is_palindromehelper(int i, int j)
+int is_palindrome(char *s)
 {
-	if (i = j)
+	int n = strlen(s);
+	if (n == 0)
+		return 1;
+	return (is_palindromehelper(s, 0, n - 1));
+}
+
+int main ()
+{
+	char s[] = " ";
+	if (is_palindrome(s))
 		return (1);
 	else
 		return (0);
