@@ -11,17 +11,15 @@
 
 int main(int argc, char *argv[])
 {
-	int num1, num2, result;
+	int i, result = 1;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[2]);
-	result = num1 * num2;
-	printf("%d", result);
-	printf("\n");
+	for (i = 1; i < argc; i++)
+		result *= atoi(argv[i]);
+	printf("%d\n", result);
 	return (0);
 }
