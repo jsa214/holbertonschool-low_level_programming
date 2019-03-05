@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+
 /**
  * main - prints value of adding num 1 and num2
  *
@@ -27,6 +28,6 @@ int main(int argc, char *argv[])
 			result += atoi(argv[i]);
 		}
 	}
-		printf("%d\n", result);
-		return (0);
+	printf("%d\n", result);
+	return (0);
 }
