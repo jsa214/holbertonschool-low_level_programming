@@ -3,7 +3,11 @@
 #include <stdlib.h>
 
 /**
+ * create_array - Function creates array of characters
  *
+ * @size: String size rep by str
+ * @c: Character in str
+ * Return: str
  */
 
 char *create_array(unsigned int size, char c)
