@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 	int j;
 	int result = 0;
 
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j]; j++)
 		{
@@ -29,5 +29,5 @@ int main(int argc, char *argv[])
 		}
 	}
 	printf("%d\n", result);
-	return (0);
+	return (result);
 }
