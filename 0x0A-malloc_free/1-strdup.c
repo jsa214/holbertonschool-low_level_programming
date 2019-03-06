@@ -6,7 +6,6 @@
  * _strdup - Function returns pointer to newly created space in memory
  *
  * @str: String being duplicated
- * @s: Duplicate of str string
  * Return: pointer represented by s or NULL
  */
 
@@ -17,8 +16,8 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 		return (NULL);
-	for (i = 0; str[i] != '\0'; i++);
-	i++;
+	for (i = 0; str[i] != '\0'; i++)
+		i++;
 	s = malloc(i * sizeof(*s));
 	if (s == 0)
 		return (NULL);
