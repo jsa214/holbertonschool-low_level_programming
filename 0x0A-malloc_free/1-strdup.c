@@ -7,7 +7,7 @@
  *
  * @str: String being duplicated
  * @s: Duplicate of str string
- * Return: pointer represented by s
+ * Return: pointer represented by s or NULL
  */
 
 char *_strdup(char *str)
@@ -25,8 +25,6 @@ char *_strdup(char *str)
 	if (s == 0)
 		return (NULL);
 	for (j = 0; j < i; j++)
-	{
 		s[j] = str[j];
-	}
 	return (s);
 }
