@@ -1,0 +1,49 @@
+#include "holberton.h"
+
+/**
+ * string_nconcat -Concatenates 2 strings
+ *
+ * @s1: first string
+ * @s2: second string
+ * @n: n bytes to be included for second string
+ * Return: NULL
+ */
+char *string_nconcat(char *s1, char *s2, unsigned int n)
+{
+	char *p;
+	int strlen1, i, c;
+
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	strlen1 = (unsigned int)_strlen(s1);
+	p = malloc((strlen1 + n) * sizeof(char));
+	if (p == NULL)
+		return (NULL);
+	for (i = 0, c = 0; i < (strlen1 + n); i++)
+	{
+		if (i < strlen)
+			p[i] = s1[i];
+		else
+			p[i] = s2[c++];
+	}
+	p[i] = '\0';
+	return (p);
+}
+
+/**
+ * _strlen - find string length
+ * @s: string
+ * Return: String length
+ */
+
+int _strlen(char *s)
+{
+	int i;
+
+	for (i = 0; s[i] = '\0'; i++)
+		;
+	return (i);
+}
