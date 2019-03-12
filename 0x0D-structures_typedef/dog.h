@@ -1,5 +1,5 @@
-#ifndef STRUCT
-#define STRUCT DOG
+#ifndef DOG
+#define DOG
 #include <stdlib.h>
 #include "dog.h"
 
@@ -20,11 +20,11 @@ struct dog
 	float age;
 };
 /**
- * dog - Typedef for dog
+ * dog_t - typedef for dog
  */
 typedef struct dog dog_t;
 void init_dog(struct dog *d, char *name, float age, char *owner);
 void print_dog(struct dog *d);
 dog_t *new_dog(char *name, float age, char *owner);
 void free_dog(dog_t *d);
-#endif /*DOG_H*/
+#endif /*DOG*/
