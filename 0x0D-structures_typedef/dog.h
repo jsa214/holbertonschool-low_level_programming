@@ -1,8 +1,10 @@
-#ifndef DOG_H
-#define DOG_H
+#ifndef STRUCT
+#define STRUCT DOG
+#include <stdlib.h>
+#include "dog.h"
 
 /**
- * struct dog- mentioning descriptions
+ * struct dog - mentioning descriptions
  *
  * @name: Char type
  * @owner: Character type
@@ -17,3 +19,4 @@ struct dog
 	char *owner;
 	float age;
 };
+#endif /*DOG_H*/
