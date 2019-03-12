@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
+#ifndef DOG_H
+#define DOG_H
 
 /**
- * struct dog: mentioning descriptions
+ * struct dog- mentioning descriptions
  *
  * @name: Char type
  * @owner: Character type
