@@ -1,33 +1,33 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 
 /**
- * prints_numbers - Function prints numbers followed by a new line
+ * print_strings - Function prints numbers followed by a new line
  *
+ * @separator: String printed between strings
  * @n: place holder for arguments
- * Return: numbers
+ * @...: Any other arguments
+ * Return: string
  */
-
-/* Add all arguments and return sum until zero */
 
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list ap;
-char *
-	unsigned int i = 0;
+	va_list args;
 
-	va_start(ap, n);
+	unsigned int i;
+
+	va_start(args, n);
 	for (i = 0; i < n; i++)
 	{
-		if ((va_arg(ap, char *) != NULL)
-		printf("%s", va_arg(ap, char *));
-		    else
-			    printf("nil");
-		if (separator != NULL && i < n -1)
+		char *value = va_arg(args, char *);
+
+		printf("%s", value);
+		if (separator != NULL && i < n - 1)
 			printf("%s", separator);
+		if (value == NULL)
+			printf("(nil)");
 	}
 	printf("\n");
-	va_end(ap);
+	va_end(args);
 }
