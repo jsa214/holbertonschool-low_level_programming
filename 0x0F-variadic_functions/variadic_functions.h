@@ -3,6 +3,8 @@
 #include <stdarg.h>
 #include <stdio.h>
 
+/* Typedef used to name user defined data types */
+
 /**
  * struct print_functions - Struct print_functions
  *
@@ -14,6 +16,7 @@ typedef struct print_functions
 	char *type;
 	void (*f)();
 } print_t;
+
 
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
