@@ -4,7 +4,6 @@
 
 int (*get_op_func(char *s))(int, int)
 {
-	int get_op_func;
 	op_t ops[] = {
 		{"+", op_add},
 		{"-", op_sub},

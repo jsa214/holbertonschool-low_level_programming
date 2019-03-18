@@ -5,33 +5,35 @@
 /**
  * main - prints any operaation called
  *
- * @sa: variable for num
- * @ba: variable pointer for character
+ * @ac: variable for num
+ * @av: variable pointer for character
  *
- * Return: int num
+ * Return: 0 else
  */
 
-int main(int sa, char **ba)
+int main(int ac, char **av)
 {
-	int i, j;
-	int num;
+	int a, b;
+	int number;
 	int (*operation)(int, int);
 
-	if (sa != 4)
+	if (ac != 4)
 	{
 		printf("Error\n");
 		exit(98);
 	}
-	if ((*ba[2] == '/' || *ba[2] == '%') && *ba[3] == '0')
+
+	if ((*av[2] == '/' || *av[2] == '%') && *av[3] == '0')
 	{
 		printf("Error\n");
 		exit(100);
 	}
-	i = atoi(ba[1]);
-	j = atoi(ba[3]);
-	operation = get_op_func(ba[2]);
 
-	num = operation(a, b);
-	printf("%d\n", num);
+	a = atoi(av[1]);
+	b = atoi(av[3]);
+	operation = get_op_func(av[2]);
+
+	number = operation(a, b);
+	printf("%d\n", number);
 	return (0);
 }
