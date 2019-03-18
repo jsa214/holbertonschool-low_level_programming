@@ -1,14 +1,15 @@
-global _start
+global main
 
 section .text
 
-_start:
+main:
+
 	mov rax, 1		; write(
-	mov rdi, 1		; 
-	mov rsi, message	; "Hello, Holberton\n"
-	mov rdx, 17		; sizeof("Hello, Holberton\n")
+	mov rdi, 1		; STDOUT
+	mov rsi, msg     	; "Hello, Holberton"
+	mov rdx, 17 		; sizeof("Hello, Holberton")
 	syscall 		; );
 
 section .data
 
-	message db "Hello, Holberton\n", 10
+	msg:	db "Hello, Holberton", 10
