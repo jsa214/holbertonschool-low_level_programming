@@ -2,6 +2,14 @@
 #include "3-calc.h"
 #include <stdlib.h>
 
+/**
+ * get_op_func - returns a pinter to function
+ * @s: operator passed as argument
+ *
+ * Description: Checks for corresponding sign with ptr
+ * Return: A ptr to function that returns a calcy
+ */
+
 int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
