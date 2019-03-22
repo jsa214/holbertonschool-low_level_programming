@@ -1,7 +1,23 @@
 #include "lists.h"
 
 /**
- * list_t - Structure being pointed to
+ * _strlen - returns length of string
+ *
+ * @s: input a string
+ * Return: Length
+ */
+
+int _strlen(const char *s)
+{
+	int i;
+
+	for (i = 0; s[i]; i++)
+		;
+	return (i);
+}
+
+/**
+ * add_node - Adds new_node in place of head
  *
  * @head: pointer to address of 1st line in struct array
  * @str: char pointer to string
@@ -12,13 +28,19 @@ list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node;
 
-	if (((new_node) = (list_t *) malloc(sizeof(list_t))))
-	{
-		new_node->len = *str;
-		new_node->next = new_node;
-		new_node->head = next;
-		return (head);
-	}
-	else
+	if (str == NULL)
 		return (NULL);
+	new_node = malloc(sizeof(list_t));
+	if (new_node == NULL)
+		return (NULL);
+	new_node->str = strdup(str);
+	{
+		free(new_node);
+		return (NULL);
+	}
+	new_node->len = _strlen(str);
+	new_node->next = *head;
+	*head = new_node;
+	return (new_node);
+
 }

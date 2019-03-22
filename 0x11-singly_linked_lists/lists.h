@@ -1,6 +1,8 @@
 #ifndef LISTS_H
 #define LISTS_H
 #include <stdlib.h>
+#include <string.h>
+#include <stdlib.h>
 
 /* Typedef used to describe data structure */
 
